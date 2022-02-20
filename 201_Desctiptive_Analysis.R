@@ -1,10 +1,10 @@
 # Read the final dataset
-analytic <- read.csv("C:/Users/azimz/Desktop/R_Linkedin/Data/analytic.csv")
+analytic <- read.csv("analytic.csv")
 
 # Create frequency tables for ASTHMA4 -> categorical response/outcome variable 
 AsthmaFreq <- table(analytic$ASTHMA4)
 AsthmaFreq
-write.csv(AsthmaFreq, "C:/Users/azimz/Desktop/R_Linkedin/Data/AsthmaFreq.csv")
+write.csv(AsthmaFreq, "AsthmaFreq.csv")
 
 # What proportion of our dataset has Asthma?
 PropAsthma <- 5343/52788
@@ -13,7 +13,7 @@ PropAsthma
 # Look at the categorical outcome ASTHMA4 by exposure variable ALCGRP 
 AsthmaAlcFreq <- table(analytic$ASTHMA4, analytic$ALCGRP)
 AsthmaAlcFreq
-write.csv(AsthmaAlcFreq, "C:/Users/azimz/Desktop/R_Linkedin/Data/AsthmaAlcFreq.csv")
+write.csv(AsthmaAlcFreq, "AsthmaAlcFreq.csv")
 
 # Visualize the frequencies 
 library(ggplot2)
