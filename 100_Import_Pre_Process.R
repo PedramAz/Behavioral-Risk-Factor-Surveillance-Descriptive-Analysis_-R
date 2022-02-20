@@ -8,7 +8,7 @@ library(MASS)
 # Obtain BRFSS-2014 dataset along with corresponding data dictionary and codebook
 # Read XPT dataset into R
 
-BRFSS_a <- read.xport("c:/users/azimz/Desktop/R_Linkedin/Data/LLCP2014.XPT")
+BRFSS_a <- read.xport("LLCP2014.XPT")
 
 # Check out the column names in the dataset
 colnames(BRFSS_a)
