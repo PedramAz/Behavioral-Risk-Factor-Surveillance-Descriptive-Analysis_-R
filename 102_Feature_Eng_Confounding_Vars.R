@@ -210,7 +210,7 @@ table(BRFSS_j$NOEXER)
 # All variables created 
 
 # Export the final "Analytic" dataset 
-write.csv(BRFSS_j, file = "C:/Users/azimz/Desktop/R_Linkedin/data/analytic.csv")
+write.csv(BRFSS_j, file = "analytic.csv")
 
 
 
